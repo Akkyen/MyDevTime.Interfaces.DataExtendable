@@ -14,7 +14,7 @@
         <RepositoryUrl>https://github.com/Akkyen/DataExtendable.Interfaces</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <TargetFrameworks>netstandard2.1;net8.0;net9.0</TargetFrameworks>
-        <Version>1.0.2</Version>
+        <Version>1.0.3</Version>
         <RootNamespace>MyDevTime.DataExtendable.Interfaces</RootNamespace>
     </PropertyGroup>
 

@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <PackageId>MyDevTime.DataExtendable.Interfaces</PackageId>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>DataExtendable Interfaces</Title>
+        <Authors>Benedikt Papiorek</Authors>
+        <Copyright>Benedikt Papiorek</Copyright>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryUrl>https://github.com/Akkyen/DataExtendable.Interfaces</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <TargetFrameworks>netstandard2.1;net8.0;net9.0</TargetFrameworks>
+        <Version>1.0.2</Version>
+        <RootNamespace>MyDevTime.DataExtendable.Interfaces</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="$(PackageReadmeFile)"/>
+        <None Include="LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)"/>
+    </ItemGroup>
+
+</Project>

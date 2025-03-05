@@ -15,7 +15,7 @@
         <RepositoryType>git</RepositoryType>
         <Version>1.1.0</Version>
         <TargetFrameworks>net8.0;net9.0;netstandard2.1</TargetFrameworks>
-        <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0.txt</PackageLicenseUrl>
+        <PackageLicenseUrl></PackageLicenseUrl>
     </PropertyGroup>
 
     <ItemGroup>

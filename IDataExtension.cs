@@ -1,4 +1,4 @@
-namespace MyDevTime.DataExtendable.Interfaces
+namespace MyDevTime.Interfaces.DataExtendable
 {
 
     /// <summary>

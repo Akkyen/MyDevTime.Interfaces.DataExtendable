@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 
-namespace MyDevTime.DataExtendable.Interfaces
+namespace MyDevTime.Interfaces.DataExtendable
 {
     /// <summary>
     /// Defines a contract for objects that support the addition, removal, and retrieval of data extensions.

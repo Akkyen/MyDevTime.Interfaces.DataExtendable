@@ -14,7 +14,7 @@ namespace MyDevTime.Interfaces.DataExtendable
         /// <summary>
         /// Is used to store all Extensions identified by their ExtensionId.
         /// </summary>
-        public ICollection<T> Extensions { get; }
+        public ICollection<T> Extensions { get; set; }
 
         #endregion
         

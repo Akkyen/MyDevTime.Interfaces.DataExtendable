@@ -17,7 +17,6 @@ namespace MyDevTime.Interfaces.DataExtendable
         public ICollection<T> Extensions { get; set; }
 
         #endregion
-        
 
 
         #region DataExtendableFunctions

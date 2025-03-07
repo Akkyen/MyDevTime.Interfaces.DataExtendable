@@ -7,7 +7,7 @@ namespace MyDevTime.Interfaces.DataExtendable
     /// Defines a contract for objects that support the addition, removal, and retrieval of data extensions.
     /// </summary>
     public interface IDataExtendable<T>
-        where T : class, IDataExtension<T>
+        where T : class, IDataExtension
     {
         #region Fields and Properties
 
@@ -17,6 +17,7 @@ namespace MyDevTime.Interfaces.DataExtendable
         public ICollection<T> Extensions { get; }
 
         #endregion
+        
 
 
         #region DataExtendableFunctions
@@ -30,8 +31,8 @@ namespace MyDevTime.Interfaces.DataExtendable
         /// <summary>
         /// Removes an existing data extension from the object.
         /// </summary>
-        /// <param name="extensionId">The data extension to remove.</param>
-        public bool RemoveDataExtension(string extensionId);
+        /// <param name="dataExtension">The data extension to remove.</param>
+        public bool RemoveDataExtension(T dataExtension);
 
         /// <summary>
         /// Retrieves a data extension by its unique identifier.
@@ -39,7 +40,7 @@ namespace MyDevTime.Interfaces.DataExtendable
         /// <param name="extensionId">The id of the extension.</param>
         /// <param name="dataExtension">The requested extension or null</param>
         /// <returns>True if an extension was found otherwise false.</returns>
-        public bool GetDataExtension(string extensionId, [NotNullWhen(true)] out T dataExtension);
+        public bool GetDataExtension(string extensionId, [NotNullWhen(true)] out T? dataExtension);
 
         #endregion
     }

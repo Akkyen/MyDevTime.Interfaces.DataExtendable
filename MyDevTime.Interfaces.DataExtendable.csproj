@@ -1,8 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <ImplicitUsings>disable</ImplicitUsings>
-        <Nullable>enable</Nullable>
         <PackageId>MyDevTime.Interfaces.DataExtendable</PackageId>
         <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -14,8 +12,7 @@
         <RepositoryUrl>https://github.com/Akkyen/MyDevTime.Interfaces.DataExtendable</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <Version>1.2.1</Version>
-        <TargetFrameworks>net8.0;net9.0;netstandard2.1</TargetFrameworks>
-        <PackageLicenseUrl></PackageLicenseUrl>
+        <TargetFrameworks>net8.0;net9.0;netstandard2.1;netstandard2.0</TargetFrameworks>
         <AssemblyVersion>1.2.1</AssemblyVersion>
         <FileVersion>1.2.1</FileVersion>
     </PropertyGroup>

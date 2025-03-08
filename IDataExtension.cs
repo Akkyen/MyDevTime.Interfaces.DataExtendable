@@ -11,7 +11,7 @@ namespace MyDevTime.Interfaces.DataExtendable
         /// <summary>
         /// The id of the extension which this DataExtension was made for.
         /// </summary>
-        public string ExtensionId { get; set; }
+        string ExtensionId { get; set; }
 
         #endregion
     }

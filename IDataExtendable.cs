@@ -1,18 +1,18 @@
 ﻿using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 
 namespace MyDevTime.Interfaces.DataExtendable
 {
     /// <summary>
     /// Defines a contract for objects that support the addition, removal, and retrieval of data extensions.
     /// </summary>
+    /// <typeparam name="T">The type of the extension. Needs to implement <see cref="IDataExtension"/></typeparam>
     public interface IDataExtendable<T>
         where T : class, IDataExtension
     {
         #region Fields and Properties
 
         /// <summary>
-        /// Is used to store all Extensions identified by their ExtensionId.
+        /// Stores all extensions.
         /// </summary>
         ICollection<T> Extensions { get; set; }
 
@@ -22,13 +22,13 @@ namespace MyDevTime.Interfaces.DataExtendable
         #region DataExtendableFunctions
 
         /// <summary>
-        /// Adds a new data extension to the object.
+        /// Adds a new data extension to the object implementing IDataExtendable.
         /// </summary>
         /// <param name="dataExtension">The data extension to add.</param>
         bool AddDataExtension(T dataExtension);
 
         /// <summary>
-        /// Removes an existing data extension from the object.
+        /// Removes an existing data extension from the object implementing IDataExtendable.
         /// </summary>
         /// <param name="dataExtension">The data extension to remove.</param>
         bool RemoveDataExtension(T dataExtension);
